@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { BoardComponent } from './board/board.component';
 
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { AlertModule } from 'ng2-bootstrap';
 import { TileComponent } from './tile/tile.component';
 
 @NgModule({
