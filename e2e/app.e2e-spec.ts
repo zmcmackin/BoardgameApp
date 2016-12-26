@@ -1,10 +1,10 @@
-import { BoardgameAppPage } from './app.po';
+import { BoardgameA2CLIPage } from './app.po';
 
-describe('boardgame-app App', function() {
-  let page: BoardgameAppPage;
+describe('boardgame-a2-cli App', function() {
+  let page: BoardgameA2CLIPage;
 
   beforeEach(() => {
-    page = new BoardgameAppPage();
+    page = new BoardgameA2CLIPage();
   });
 
   it('should display message saying app works', () => {

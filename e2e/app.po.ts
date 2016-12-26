@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class BoardgameAppPage {
+export class BoardgameA2CLIPage {
   navigateTo() {
     return browser.get('/');
   }
