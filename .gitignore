@@ -36,8 +36,8 @@ testem.log
 /e2e/*.map
 
 #tscompiled
-/src/**/*.js
-/src/**/*.map
+/src/app/**/*.js
+/src/app/**/*.map
 
 /www
 
