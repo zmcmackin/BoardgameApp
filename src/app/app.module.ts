@@ -8,6 +8,7 @@ import {TabsPage} from '../pages/tabs/tabs';
 import {AngularFireModule} from 'angularfire2';
 import {BoardPage} from "../pages/board/board";
 import {BoardComponent} from "../components/board/board";
+import {TileComponent} from "../components/tile/tile";
 
 export const firebaseConfig = {
 	apiKey: "AIzaSyCtTaqrwStj8yJRpGaeOf7h74Qx-e5WkwQ",
@@ -25,7 +26,8 @@ export const firebaseConfig = {
 		HomePage,
 		TabsPage,
 		BoardPage,
-		BoardComponent
+		BoardComponent,
+		TileComponent
 	],
 	imports: [
 		IonicModule.forRoot(MyApp),

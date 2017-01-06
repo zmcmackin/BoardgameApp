@@ -1,8 +1,7 @@
-<!--
-  Generated template for the Board component.
-
-  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
-  for more info on Angular 2 Components.
--->
-
-{{text}}
+<ion-grid>
+    <ion-row *ngFor="let row of grid">
+        <ion-col width-33 *ngFor="let tile of row">
+            <tile></tile>
+        </ion-col>
+    </ion-row>
+</ion-grid>
