@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BoardgameApp" type="PhoneGap" factoryName="PhoneGap/Cordova">
+    <option name="myExecutable" value="C:\Users\Zack\AppData\Roaming\npm\ionic.cmd" />
+    <option name="myWorkDir" value="$PROJECT_DIR$" />
+    <option name="myCommand" value="serve" />
+    <option name="myPassParent" value="true" />
+    <option name="myPlatform" value="browser" />
+    <option name="myExtraArgs" value="" />
+    <option name="hasTarget" value="false" />
+    <option name="target" value="" />
+    <method />
+  </configuration>
+</component>
