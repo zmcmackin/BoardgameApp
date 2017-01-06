@@ -35,6 +35,12 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+#tscompiled
+/src/**/*.js
+/src/**/*.map
+
+/www
+
 #System Files
 .DS_Store
 Thumbs.db
