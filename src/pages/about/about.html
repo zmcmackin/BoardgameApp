@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>{{ (item | async)?.name }}</h1>
+    <button (click)="clicked()">test button</button>
+</ion-content>

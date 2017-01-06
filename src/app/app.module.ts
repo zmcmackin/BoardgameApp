@@ -1,31 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { MaterialModule} from '@angular/material';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { AboutPage } from '../pages/about/about';
+import { ContactPage } from '../pages/contact/contact';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+import { AngularFireModule } from 'angularfire2';
 
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { BoardComponent } from './board/board.component';
-
-import { AlertModule } from 'ng2-bootstrap';
-import { TileComponent } from './tile/tile.component';
+export const firebaseConfig = {
+    apiKey: "AIzaSyCtTaqrwStj8yJRpGaeOf7h74Qx-e5WkwQ",
+    authDomain: "boardgameapp-2beef.firebaseapp.com",
+    databaseURL: "https://boardgameapp-2beef.firebaseio.com",
+    storageBucket: "boardgameapp-2beef.appspot.com",
+    messagingSenderId: "124060570844"
+};
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent,
-    BoardComponent,
-    TileComponent
+    MyApp,
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    MaterialModule.forRoot(),
-    AlertModule.forRoot()
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage
+  ],
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
-export class AppModule { }
+export class AppModule {}
