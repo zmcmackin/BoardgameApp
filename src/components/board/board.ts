@@ -4,6 +4,7 @@ import {Component} from '@angular/core';
 	selector: 'board',
 	templateUrl: 'board.html'
 })
+
 export class BoardComponent {
 
 	grid: Array<Array<number>>;
