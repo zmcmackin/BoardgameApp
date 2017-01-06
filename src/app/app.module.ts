@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AngularFireModule } from 'angularfire2';
+import {BoardPage} from "../pages/board/board";
 
 export const firebaseConfig = {
     apiKey: "AIzaSyCtTaqrwStj8yJRpGaeOf7h74Qx-e5WkwQ",
@@ -21,7 +22,8 @@ export const firebaseConfig = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BoardPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -33,7 +35,8 @@ export const firebaseConfig = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+	  BoardPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
