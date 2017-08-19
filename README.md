@@ -1,7 +1,21 @@
 # boardgameapp
 This application was generated using JHipster 4.6.2, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.6.2](https://jhipster.github.io/documentation-archive/v4.6.2).
 
+##Development Requirements
+Node v6.10.2+
+Mongo DB 3.4.7
+Docker Toolbox via Kitematic https://kitematic.com/
+JHipster environment setup with yarn https://jhipster.github.io/installation/
+
 ## Development
+build docker image 
+./mvnw package -Pprod docker:build
+
+open kitematic - start mongodb container
+
+yarn start
+
+./mvnw 
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 

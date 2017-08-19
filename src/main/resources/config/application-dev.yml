@@ -26,7 +26,7 @@ spring:
         serialization.indent_output: true
     data:
         mongodb:
-            uri: mongodb://localhost:27017
+            uri: mongodb://192.168.99.100:27017
             database: boardgameapp
     mail:
         host: localhost
