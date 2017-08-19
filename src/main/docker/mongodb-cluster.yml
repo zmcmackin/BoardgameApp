@@ -1,0 +1,16 @@
+version: '2'
+services:
+    boardgameapp-mongodb:
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb boardgameapp-mongodb-config
+    boardgameapp-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    boardgameapp-mongodb-config:
+        image: mongo:3.2.10
+        container_name: boardgameapp-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
