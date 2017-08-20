@@ -9,6 +9,8 @@ Docker Toolbox via Kitematic https://kitematic.com/
 JHipster environment setup with yarn https://jhipster.github.io/installation/
 
 ## Development
+npm install
+
 build docker image requires system environment variables in windows
 DOCKER_HOST=tcp://192.168.99.100:2376
 DOCKER_MACHINE_NAME=default
@@ -16,6 +18,7 @@ DOCKER_TLS_VERIFY=1
 DOCKER_CERT_PATH=C:\Users\username\.docker\machine\machines\default
 DOCKER_TOOLBOX_INSTALL_PATH=C:\Program Files\Docker Toolbox
 ./mvnw package -Pprod docker:build
+docker-compose -f src/main/docker/mongodb.yml up -d
 
 open kitematic - start mongodb container
 
