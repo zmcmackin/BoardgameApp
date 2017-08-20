@@ -9,6 +9,8 @@ Docker Toolbox via Kitematic https://kitematic.com/
 JHipster environment setup with yarn https://jhipster.github.io/installation/
 
 ## Development
+npm install
+
 build docker image requires system environment variables in windows
 DOCKER_HOST=tcp://192.168.99.100:2376
 DOCKER_MACHINE_NAME=default
