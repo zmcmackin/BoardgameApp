@@ -18,6 +18,7 @@ DOCKER_TLS_VERIFY=1
 DOCKER_CERT_PATH=C:\Users\username\.docker\machine\machines\default
 DOCKER_TOOLBOX_INSTALL_PATH=C:\Program Files\Docker Toolbox
 ./mvnw package -Pprod docker:build
+docker-compose -f src/main/docker/mongodb.yml up -d
 
 open kitematic - start mongodb container
 
