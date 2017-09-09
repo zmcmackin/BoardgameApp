@@ -17,6 +17,16 @@ choco install mongodb
 
 choco install jdk8
 
+choco install git
 
+git install maven
 
+refreshenv
+
+#libraries not in maven
+git clone https://github.com/mapstruct/mapstruct.git
+
+cd mapstruck
+mvn clean install
+cd ..
 
